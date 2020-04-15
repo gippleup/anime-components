@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import Lively from '../helper/Lively'
 
-/* 
-아이템 개수, 스프레드 시작각도, 끝각도, 간격
-*/
-
 export class Spread extends Component {
   constructor(props) {
     super(props);
@@ -28,6 +24,7 @@ export class Spread extends Component {
     parent.style.zIndex = '10000';
     newState.parent = parent;
     Array.from(children).forEach(child => {
+      child.style.opacity = '0';
       child.style.position = 'absolute';
       newState.items.push(new Lively(child));
     })
@@ -58,7 +55,8 @@ export class Spread extends Component {
           translateY: circleY + 'px',
           opacity: 1,
           duration: 1000,
-          delay: (100 / itemCount) * i,
+          delay: (1000 / itemCount) * i,
+          
         })
       } else {
         item.recover({
@@ -69,7 +67,7 @@ export class Spread extends Component {
           },
           easing: 'easeOutCubic',
           duration: 500,
-          delay: (50 / itemCount) * i
+          delay: (1000 / itemCount) * i
         });
       }
       item.toggleState('pong');

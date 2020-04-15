@@ -51,41 +51,6 @@ export class Lively {
     )
     anime(newOption)
   }
-
-  // pingpong(x, y, width, height, duration, delay) {
-  //   let diffX, diffY, newWidth, newHeight;
-  //   if (!this.state.ponged) {
-  //     diffX = x;
-  //     diffY = y;
-  //     newWidth = width || this.originWidth;
-  //     newHeight = height || this.originHeight;
-  //     this.toggleState('ponged')
-  //   } else {
-  //     diffX = 0;
-  //     diffY = 0;
-  //     newWidth = this.originWidth;
-  //     newHeight = this.originHeight;
-  //     this.toggleState('ponged')
-  //   }
-
-    // this.animate({
-    //   targets: this.target,
-    //   translateX: diffX,
-    //   translateY: diffY,
-    //   width: {
-    //     value: newWidth,
-    //     easing: 'easeOutCubic',
-    //     duration: duration / 4 || 250,
-    //   },
-    //   height: {
-    //     value: newHeight,
-    //     easing: 'easeOutCubic',
-    //     duration: duration / 4 || 250,
-    //   },
-    //   duration: duration || 1000,
-    //   delay: delay || 0,
-    // })
-  // }
 }
 
 export default Lively
