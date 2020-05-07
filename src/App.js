@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import SpreadEx2 from './components/SpreadEx2'
 import SpreadEx3 from './components/SpreadEx3'
 import './App.css';
+import AnimeMenu from './components/AnimeMenu'
 
 class App extends Component {
   spreader(option) {
